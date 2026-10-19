@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Tank Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Screen Overlay -->
+    <div id="menuOverlay">
+        <div id="menuBox">
+            <h1>NEON TANK BATTLE</h1>
+            <p>Enter your callsign, commander:</p>
+            <input type="text" id="playerNameInput" placeholder="PlayerName" maxlength="12" value="Tanker">
+            <button id="startButton">DEPLOY</button>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
